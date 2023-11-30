@@ -8,18 +8,7 @@
 <body>
 <div id="title"><h1>The Den of Inequality</h1></div>
 <div id="container">
-<div id="sidebar">
-<!-- Side note, the fractal pic is modified from http://w3-o.cs.hm.edu/~ruckert/
-compiler/www.math.okstate.edu/dragon.html -->
-
-<h2>Site menu</h2>
-<a class="menu" href="./">Main page</a>
-<a class="menu" href="coursework.php">Courses</a>
-<a class="menu" href="files.php">Class Material</a>
-<a class="menu" href="CV.php">CV / Publications</a>
-<a class="menu" href="contactinfo.php">Contact Info</a>
-</div>
-
+{% include menu.html %}
 <div id="main">
 <div style="float: right"><img border = "1" height= 360 px, src = "mypic4.jpg" ></div>
 <font size = 4 ><strong>Michael Lewis</strong></font><br>
@@ -32,37 +21,7 @@ Courant Institute of Mathematical Sciences<br>
 <tr> <td> </td> <td>Probability</td> </tr>
 </table>
 </div>
-<br clear="left">
-<p class="credits" align="left">&copy;
-2012 
-<SCRIPT LANGUAGE="javascript"> 
- 
-    var user = location.href.replace(/.*\~/,'').replace(/\/.*/,'') ; 
- 
-    var first = 'ma';
-    var second = 'il';
-    var third = 'to:';
- 
-    var address = user;
-    var domain = 'cims.nyu';
-    var ext = 'edu';
-    document.write('<a href="');
-    document.write(first+second+third);
-    document.write(address);
-    document.write('&#64;');
-    document.write(domain);
-    document.write('.');
-    document.write(ext);  
-    document.write('" style="color: gray;'); 
-    document.write('">'); 
- 
-    document.write('Michael Lewis');
- 
-    document.write('</a>');
-</script>
-<noscript>Michael Lewis</noscript> 
-| Design by <a href="http://andreasviklund.com">Andreas Viklund</a><br>
-Website material last updated 0 days ago.</p>
+{% include credits.html %}
 <div id="footer"></div>
 </div>
 </body>
